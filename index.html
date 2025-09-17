@@ -89,6 +89,21 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    cursor: pointer; /* Đổi con trỏ chuột thành hình bàn tay */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service-box:hover {
+    transform: translateY(-5px); /* Hơi nhấc box lên một chút */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5); /* Tăng độ đậm của bóng */
+}
+.service-link {
+    text-decoration: none; /* Bỏ gạch chân của liên kết */
+    color: inherit; /* Giữ nguyên màu chữ của box */
+    display: flex; /* Dùng flex để giữ nguyên bố cục */
+    align-items: center;
+    gap: 20px;
+    width: 100%; /* Đảm bảo link chiếm toàn bộ box */
+    height: 100%;
 }
 
 /* Định dạng cho phần chữ */
@@ -174,26 +189,33 @@
 
     <section id="main" class="container">
         <h2>Dịch Vụ Của Tôi</h2>
+        
         <div class="service-box">
+            <a href="#contact" class="service-link">
             <img src="cai-dat.png" alt="Icon cài đặt hệ điều hành" class="service-icon">
             <div class="service-text">
             <h3>Cài Đặt Hệ Điều Hành</h3>
             <p>Cài đặt mới hoặc nâng cấp hệ điều hành Windows. Đảm bảo hệ thống hoạt động ổn định và mượt mà.</p>
         </div>
+            </a>
 </div>
         <div class="service-box">
+            <a href="#contact" class="service-link">
             <img src="phan-mem.png" alt="Icon phần mềm" class="service-icon">
             <div class="service-text">
             <h3>Cài Đặt Phần Mềm Theo Yêu Cầu</h3>
             <p>Cài đặt các phần mềm văn phòng (Microsoft Office), đồ họa (Adobe Photoshop, Illustrator), và các phần mềm khác.</p>
         </div>
+            </a>
 </div>
         <div class="service-box">
+            <a href="#contact" class="service-link">
             <img src="toi-uu.png" alt="Icon tối ưu" class="service-icon">
             <div class="service-text">
             <h3>Tối Ưu Hóa Hệ Thống</h3>
             <p>Tinh chỉnh hệ thống, gỡ bỏ các phần mềm rác giúp máy tính của bạn khởi động và hoạt động nhanh hơn đáng kể.</p>
         </div>
+            </a>
 </div>
     </section>
 
@@ -225,6 +247,7 @@
 </body>
 
 </html>
+
 
 
 
