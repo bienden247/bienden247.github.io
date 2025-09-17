@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ Sửa Chữa & Cài Đặt Phần Mềm Máy Tính</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #eee;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #1a1a1a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #00bcd4 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            float: right;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        #showcase {
+            min-height: 400px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517032127202-cc9d747a8342?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+            text-align: center;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #showcase .container {
+            width: 70%;
+            background: rgba(0,0,0,0.5);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        #showcase h1 {
+            margin-top: 0;
+            font-size: 55px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #main {
+            padding: 20px 0;
+        }
+        .service-box {
+            background: #333;
+            color: #eee;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            border-left: #00bcd4 5px solid;
+        }
+        .service-box h3 {
+            color: #00bcd4;
+        }
+        #contact {
+            text-align: center;
+            padding-bottom: 40px;
+        }
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Khoảng cách giữa các nút */
+            flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
+        }
+        .contact-btn {
+            display: inline-flex; /* Sắp xếp icon và chữ */
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+        }
+        .contact-btn i {
+            margin-right: 12px; /* Khoảng cách giữa icon và chữ */
+            font-size: 24px;
+        }
+        .phone-btn { background-color: #28a745; }
+        .zalo-btn { background-color: #0068ff; }
+        .facebook-btn { background-color: #1877f2; }
+        
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-top: #00bcd4 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span style="color: #00bcd4;">DK</span> Tech</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#main">Dịch Vụ</a></li>
+                    <li><a href="#about">Về Chúng Tôi</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Chuyên Gia Sửa Chữa & Cài Đặt Phần Mềm</h1>
+            <p>Nhanh chóng, Chuyên nghiệp, Giá cả phải chăng. Giải quyết mọi vấn đề cho máy tính của bạn.</p>
+        </div>
+    </section>
+
+    <section id="main" class="container">
+        <h2>Dịch Vụ Của Chúng Tôi</h2>
+        <div class="service-box">
+            <h3>Cài Đặt Hệ Điều Hành</h3>
+            <p>Cài đặt mới hoặc nâng cấp hệ điều hành Windows. Đảm bảo hệ thống hoạt động ổn định và bảo mật.</p>
+        </div>
+        <div class="service-box">
+            <h3>Cài Đặt Phần Mềm Theo Yêu Cầu</h3>
+            <p>Cài đặt các phần mềm văn phòng (Microsoft Office), đồ họa (Adobe Photoshop, Illustrator), và các phần mềm khác.</p>
+        </div>
+        <div class="service-box">
+            <h3>Tối Ưu Hóa Hệ Thống</h3>
+            <p>Tinh chỉnh hệ thống, gỡ bỏ các phần mềm rác giúp máy tính của bạn khởi động và hoạt động nhanh hơn đáng kể.</p>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>Về Chúng Tôi</h2>
+        <p>Với nhiều năm kinh nghiệm trong lĩnh vực công nghệ thông tin, chúng tôi cam kết mang đến cho khách hàng những giải pháp phần mềm tốt nhất. Chúng tôi luôn đặt sự hài lòng của khách hàng và chất lượng dịch vụ lên hàng đầu.</p>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Liên Hệ Với Chúng Tôi</h2>
+        <p>Chọn phương thức liên hệ tiện lợi nhất cho bạn. Chúng tôi sẵn sàng hỗ trợ 24/7!</p>
+        <div class="contact-buttons">
+            <a href="tel:0389930913" class="contact-btn phone-btn">
+                <i class="fas fa-phone"></i> Gọi Ngay
+            </a>
+            
+            <a href="https://zalo.me/0389930913" target="_blank" class="contact-btn zalo-btn">
+                <i class="fa-solid fa-comment-dots"></i> Nhắn Tin Zalo
+            </a>
+
+            <a href="https://www.facebook.com/anhk.0702" target="_blank" class="contact-btn facebook-btn">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>Bản quyền © 2025 _tranduykhanh | Cung cấp bởi Gemini</p>
+    </footer>
+</body>
+</html>
