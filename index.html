@@ -87,6 +87,33 @@
         .service-box h3 {
             color: #00bcd4;
         }
+        /* SỬA LẠI .service-box để dùng Flexbox */
+.service-box {
+    background: #333;
+    color: #eee;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-left: #00bcd4 5px solid;
+    /* --- BẮT ĐẦU MÃ MỚI --- */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Định dạng cho phần chữ */
+.service-text {
+    flex: 1; /* Cho phép phần chữ co giãn */
+}
+
+/* Định dạng cho ảnh minh họa */
+.service-icon {
+    max-width: 80px;  /* Giới hạn kích thước ảnh */
+    height: auto;
+    border-radius: 8px; /* Bo tròn góc ảnh cho đẹp */
+}
         #contact {
             text-align: center;
             padding-bottom: 40px;
@@ -204,5 +231,6 @@
 </body>
 
 </html>
+
 
 
